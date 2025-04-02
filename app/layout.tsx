@@ -30,8 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar fluid rounded className="justify-between mx-auto p-4 bg-[#eeeeee] fixed top-0 right-0 left-0 z-50">
-          <NavbarBrand as={Link} href="/" className="space-x-3 pl-10">
+        <Navbar fluid rounded className="justify-between mx-auto p-4 bg-[#eeeeee] dark:bg-[#eeeeee] fixed top-0 right-0 left-0 z-50">
+          <NavbarBrand as={Link} href="/" className="space-x-3 sm:pl-[9%]">
             <Image
               src={'/images/logo.svg'}
               alt="logo image"
@@ -46,14 +46,14 @@ export default function RootLayout({
             />
           </NavbarBrand>
           <NavbarToggle />
-          <NavbarCollapse className="font-medium p-4 md:p-0 mt-4 md:pr-10">
-            <NavbarLink href="#" className="text-[#394149] text-[18px]">
+          <NavbarCollapse className="font-medium p-4 md:p-0 mt-4 md:pr-[9%]">
+            <NavbarLink href="#" className="text-[#394149] dark:text-[#394149] text-[18px]">
               Acceuil
             </NavbarLink>
-            <NavbarLink href="#" className="text-[#394149] text-[18px]">A propos</NavbarLink>
-            <NavbarLink href="#" className="text-[#394149] text-[18px]">Forfait</NavbarLink>
-            <NavbarLink href="#" className="text-[#394149] text-[18px]">Contact</NavbarLink>
-            <NavbarLink href="#" className="text-[#394149] text-[18px]">Nous soutenir</NavbarLink>
+            <NavbarLink href="#" className="text-[#394149] dark:text-[#394149] text-[18px]">A propos</NavbarLink>
+            <NavbarLink href="#" className="text-[#394149] dark:text-[#394149] text-[18px]">Forfait</NavbarLink>
+            <NavbarLink href="#" className="text-[#394149] dark:text-[#394149] text-[18px]">Contact</NavbarLink>
+            <NavbarLink href="#" className="text-[#394149] dark:text-[#394149] text-[18px]">Nous soutenir</NavbarLink>
           </NavbarCollapse>
         </Navbar>
         {children}

@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import "tailwindcss-animated";
+@import 'tailwindcss-animated';
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
@@ -17,8 +17,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+    --background: #eeeeee;
+    --foreground: #171717;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100vw); /* Début hors de l'écran à droite */
+  }
+  to {
+    transform: translateX(
+      -100%
+    ); /* Défilement vers la gauche, en dehors de l'écran */
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
   }
 }
 
