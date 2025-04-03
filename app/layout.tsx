@@ -4,6 +4,19 @@ import "./globals.css";
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Barlow, Goldman } from 'next/font/google';
+
+const barlow = Barlow({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-barlow",
+});
+
+const goldman = Goldman({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-goldman",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${barlow.variable} ${goldman.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar fluid rounded className="justify-between mx-auto p-4 bg-[#eeeeee] dark:bg-[#eeeeee] fixed top-0 right-0 left-0 z-50">
           <NavbarBrand as={Link} href="/" className="space-x-3 sm:pl-[9%]">
