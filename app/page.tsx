@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="">
-      <section className="flex flex-wrap md:flex-wrap-reverse justify-center md:justify-between items-center pt-25 pb-15 sm:py-25 sm:max-w-[80%] sm:mx-auto space-y-6">
-        <div className="md:max-w-2/3 sm:pr-10">
-          <h5 className="text-[25px] sm:text-[65px] text-justify sm:text-start px-2 sm:px-0 font-[Goldman] mb-4 sm:mb-8 font-bold tracking-tight text-[#394149]  animate-fade-right animate-duration-[2000ms]">
+      <section className="flex flex-wrap sm:flex-wrap-reverse justify-center sm:justify-between items-center pt-25 pb-15 sm:py-25 sm:max-w-[80%] sm:mx-auto space-y-6">
+        <div className="sm:max-w-2/3 sm:pr-10">
+          <h5 className="text-[35px] sm:text-[65px]  sm:text-start px-2 sm:px-0 font-[Goldman] mb-4 sm:mb-8 font-bold tracking-tight text-[#394149]  animate-fade-right animate-duration-[2000ms]">
             Nous vous aidons à agrandir votre entreprise !
           </h5>
           <p className="font-normal text-justify px-2 sm:px-0 mb-4 text-gray-700  animate-fade animate-duration-[2000ms] animate-delay-1000">
@@ -17,7 +17,7 @@ export default function Home() {
             COMMENCER !
           </Button>
         </div>
-        <div className="relative md:max-w-1/3 bg-[#394149] outline-1 outline-offset-10 outline-solid w-[250px] sm:w-[350px] h-[400px] sm:h-[550px] rounded-full flex justify-center items-center overflow-hidden before:content-[''] before:absolute before:w-[230px] sm:before:w-[330px] before:h-[380px] sm:before:h-[520px] before:rounded-full before:border before:border-white before:z-0 animate-jump-in animate-duration-[2000ms] animate-delay-1000">
+        <div className="relative mt-8 sm:mt-0 sm:max-w-1/3 bg-[#394149] outline-1 outline-offset-10 outline-solid w-[250px] sm:w-[350px] h-[400px] sm:h-[550px] rounded-full flex justify-center items-center overflow-hidden before:content-[''] before:absolute before:w-[230px] sm:before:w-[330px] before:h-[380px] sm:before:h-[520px] before:rounded-full before:border before:border-white before:z-0 animate-jump-in animate-duration-[2000ms] animate-delay-1000">
           <Image
             className="w-full h-full object-cover object-center z-10"
             src="/images/fond-femme.png"
@@ -44,7 +44,7 @@ export default function Home() {
       </section>
 
       <section className="px-2 sm:px-0 py-6 mb-4 sm:mb-8 flex flex-col items-center">
-        <div className="flex flex-wrap md:flex-wrap-reverse justify-between items-center md:text-left sm:max-w-[80%] sm:mx-auto w-full text-justify space-y-4">
+        <div className="flex flex-wrap sm:flex-wrap-reverse justify-between items-center sm:text-left sm:max-w-[80%] sm:mx-auto w-full text-justify space-y-4">
           <h5 className="text-[22px] sm:text-[28px] max-w-sm font-[Goldman] font-bold tracking-tight text-[#394149]">
             Ramener votre marketing en ligne à un autre niveau !
           </h5>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 sm:mt-18 grid grid-cols-1 md:grid-cols-3 gap-4 sm:max-w-[80%] sm:mx-auto w-full mx-auto">
+        <div className="mt-10 sm:mt-18 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:max-w-[80%] sm:mx-auto w-full mx-auto">
           <div className="bg-[#ffff]/50 p-6 rounded-xl outline outline-offset-0 flex flex-col justify-between">
             <h3 className="text-[38px]  mb-8">Planification directe</h3>
             <p className="text-sm text-justify  text-gray-500 mb-20">
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#394149] flex flex-wrap md:flex-wrap-reverse justify-center sm:justify-between items-center px-2 sm:px-0 py-10 sm:py-20 sm:pl-[10%] sm:pr-[10%] sm:mx-auto">
+      <section className="bg-[#394149] flex flex-wrap sm:flex-wrap-reverse justify-center sm:justify-between items-center px-2 sm:px-0 py-10 sm:py-20 sm:pl-[10%] sm:pr-[10%] sm:mx-auto">
         <div className="relative w-[410px] h-[450px] rounded-4xl  flex justify-center items-center overflow-hidden">
           <Image
             className="w-full h-full object-cover object-left z-10"
@@ -262,7 +262,7 @@ export default function Home() {
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             </p>
             <div className="flex justify-center">
-              <div className="flex items-center bg-white p-2 rounded-full max-w-md">
+              <div className="flex items-center bg-white p-2 rounded-full max-w-sm">
                 <div className="flex items-center px-3">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-[#394149] size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -285,7 +285,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-wrap md:flex-wrap-reverse justify-center sm:justify-between items-center py-6 m-2 sm:m-0 sm:max-w-[80%] sm:mx-auto sm:space-y-4">
+      <section className="flex flex-wrap sm:flex-wrap-reverse justify-center sm:justify-between items-center py-6 m-2 sm:m-0 sm:max-w-[80%] sm:mx-auto sm:space-y-4">
         <h5 className="order-1 sm:order-none">
           Copyright ©, Tous droits réservés
         </h5>
